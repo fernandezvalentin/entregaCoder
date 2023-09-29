@@ -1,0 +1,292 @@
+/* *=TODO */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* UBICACION DEL LOGO, APLICA EN TODOS LOS HTML. HEADER*/
+.nav-logo img {
+  height: 90px;
+}
+
+/* UBICACION DEL FORMULARIO, APLICA EN TODOS LOS HTML. HEADER*/
+.container-form {
+  display: flex;
+  justify-content: center;
+}
+
+a:visited {
+  /*Todos los elementos <a> que tengan un atributo href definido y ya hayan sido
+   visitados, APLICA EN INDEX-PROMOCIONES-DESTACADO*/
+  background-color: rgba(255, 255, 255, 0.836);
+  color: #ffffff;
+}
+
+/* MARGEN DEL CONTAINER, APLICA EN TODOS LOS HTML */
+.container {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(15, 27, 190);
+}
+
+/* nav centrado. APLICA EN TODOS LOS HTML. HEADER */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  /* Centra el contenido horizontalmente */
+}
+
+/* APLICA EN TODOS LOS HTML. HEADER */
+
+nav li {
+  display: inline-block;
+  /* Muestra los elementos de lista en línea */
+  margin: 0 10px;
+  /* Espaciado horizontal entre elementos de lista */
+}
+
+/* APLICA EN TODOS LOS HTML. HEADER*/
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* AL TOCAR RESALTA EL COLOR. APLICA EN TODOS LOS HTML. HEADER*/
+nav a:hover {
+  color: gray;
+}
+
+/* ENCABEZADO. APLICA EN TODOS LOS HTML*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: hwb(0 0% 100%);
+  color: white;
+}
+
+/* TODO LO QUE APARECE. APLICA EN TODOS LOS HTML */
+body {
+  background-color: rgb(255, 253, 253);
+  font-family: "Mulish", sans-serif;
+  font-family: "Noto Serif", serif;
+}
+
+/* index */
+.banner-1 {
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+/* index */
+.banner-2 {
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+/* index */
+.banner-3 {
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  grid-row: 1;
+  grid-column: 3;
+}
+
+/* index */
+.titulo-banner1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+/* index */
+.titulo-banner2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+}
+
+/* index */
+.titulo-banner3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+}
+
+/* promociones */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  display: block;
+  border: 1px solid #000;
+}
+
+.item-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+/* nosotros */
+
+.quienes-somos {
+  padding: 70px;
+  background-color: #eaeded;
+}
+
+/* nosotros */
+.mision-nosotros {
+  padding: 70px;
+  background-color: #d5dbdb;
+}
+
+/* nosotros */
+.vision-nosotros {
+  padding: 70px;
+  background-color: #eaeded;
+}
+
+/* nosotros */
+.nuestros-valores {
+  padding: 70px;
+  background-color: #d5dbdb;
+}
+
+/* contacto */
+
+.contactame {
+  padding: 70px;
+  background-color: #eaeded;
+}
+
+/* contacto */
+
+.asistencia {
+  padding: 70px;
+  background-color: #d5dbdb;
+}
+
+/* contacto */
+
+.opciones {
+  padding: 70px;
+  background-color: #eaeded;
+}
+
+/* contacto */
+
+.devol {
+  padding: 70px;
+  background-color: #d5dbdb;
+}
+
+/* contacto */
+
+.politicas {
+  padding: 70px;
+  background-color: #eaeded;
+}
+
+/* UBICACION DEL FORMULARIO. APLICA EN TODOS LOS HTML */
+form {
+  display: flex;
+  align-items: center;
+}
+
+/* APLICA EN TODOS LOS HTML */
+label {
+  margin-right: 10px;
+}
+
+/* Ajusta el ancho según tus necesidades */
+input[type="search"] {
+  width: 150px;
+}
+
+.article h2 {
+  font-size: 25px;
+}
+
+/* footer. APLICA EN TODOS LOS HTML*/
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.redes-sociales a {
+  margin-left: 10px;
+  /* Opcional: Agrega margen izquierdo entre los íconos */
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "inicio promociones destacado nosotros contacto";
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-color: #eaeded;
+}
+
+/*--------------MEDIA QUERIES--------------*/
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .footer {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .titulo-banner1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .titulo-banner2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .titulo-banner3 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
